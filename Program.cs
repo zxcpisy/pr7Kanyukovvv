@@ -70,8 +70,8 @@ namespace pr7Kan
             foreach (HtmlNode DivNews in DivsNews)
             {
                 var src = DivNews.ChildNodes[1].GetAttributeValue("src", "none");
-                var name = DivsNews.ChildNodes[3].InnerText;
-                var description = DivsNews.ChildNodes[5].InnerText;
+                var name = DivNews.ChildNodes[3].InnerText;
+                var description = DivNews.ChildNodes[5].InnerText;
                 Console.WriteLine(name + "\n" + "Изображение" + src + "\n" + "Описание" + description + "\n");
             }
         }
